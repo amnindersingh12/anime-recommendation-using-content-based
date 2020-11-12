@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Recommended Animes are </title>
+</head>
+
+<body>
+    <center>
+        <h1>Recommendations are </h1>
+        <br>
+        <br>
+        {% for table in tables %}
+      
+        {{ table|safe }}
+{% endfor %}
+        <br>
+        <br> <br>
+        <br> <br>
+        <br>
+        <a href="/">go back to homepage.</a>
+    </center>
+</body>
+
+</html>

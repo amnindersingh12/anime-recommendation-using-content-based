@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  
+
+  <link rel="stylesheet" type="text/css" href="./static/style.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Anime Recommendation</h1>
+  </div>
+  <div id="imd">
+    <img src="/static/anime.jpeg" alt="" style="  border-radius: 8px; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 50%;">
+  </div>
+  <div class="predict">
+    <form method="POST" action="{{url_for('predict_on')}}">
+      <b>Anime title : <input type="text" name='anime' placeholder="Naruto" required='required'> </b>
+      <input type="submit"  class="Search" value="Search" >
+    </form>
+  
+  </div>
+  <footer>
+    <p>© Made with ❤️ by Amninder Singh</p>
+</footer>
+</body>
+
+</html>
